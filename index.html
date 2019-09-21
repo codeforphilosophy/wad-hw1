@@ -3,81 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <link rel="icon" href="res/images/favicon.ico">
-    <title>Hello world!</title>
-</head>
-
-<body>
-<header>
-    <strong>Welcome to your dashboard!</strong>
-</header>
-
-<section>
-    <div>
-        <img src="res/images/me.png" alt="My picture" title="Not really my picture">
-    </div>
-    <div>
-        <ol>
-            <li>John Doe</li>
-            <li>27/06/1993</li>
-            <li>Software Engineering</li>
-        </ol>
-    </div>
-    <div>
-        <strong>2.65</strong>
-    </div>
-</section>
-
-<section>
-    <h1>
-        <span>Courses</span>
-    </h1>
-    <table>
-        <thead>
-        <tr>
-            <th>#</th>
-            <th>Course Title</th>
-            <th>Semester</th>
-            <th>Grade</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>1</td>
-            <td>Agile software development</td>
-            <td>1</td>
-            <td>82</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>System modeling</td>
-            <td>1</td>
-            <td>85</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Object-oriented programming</td>
-            <td>2</td>
-            <td>99</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>Estonian language Level A2</td>
-            <td>2</td>
-            <td>65</td>
-        </tr>
-        </tbody>
-    </table>
-</section>
-
-<footer>
-    <ul>
-        <li>
-            <a href="https://ois2.ut.ee/">OIS</a>
-        </li>
-        <li>
-            <a href="https://courses.cs.ut.ee/">Courses</a>
-        </li>
-    </ul>
-</footer>
-</body>
-</html>
+    <title>User Profile</title>
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="res/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900&display=swap" rel="stylesheet">
+    </head>
+    
+    <body> 
+        <header>
+            <strong>Welcome to your dashboard!</strong>
+        </header>
+        
+        <div class="profile_info">
+            <section>
+                <div>
+                    <img style="width: 90px; height: 90px;" src="res/images/me.png" alt="My picture" title="Not really my picture">
+                </div>
+                <div>
+                    <ol>
+                        <li>John Doe</li>
+                        <li>27/06/1993</li>
+                        <li>Software Engineering</li>
+                    </ol>
+                </div>
+                <div>
+                    <strong>2.65</strong>
+                </div>
+            </section>
+            
+            
+            <section class="container">
+                <h1>
+                    <span>Courses</span>
+                </h1>
+                
+                
+                <table class="">
+                    <thead class="table_head">
+                        <tr>
+                            <th class="box-one">#</th>
+                            <th class="box-two">Course Title</th>
+                            <th class="box-three">Semester</th>
+                            <th class="box-four">Grade</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table_body">
+                        <tr>
+                            <td class="box-one">1</td>
+                            <td class="box-two">Agile software development</td>
+                            <td class="box-three">1</td>
+                            <td class="box-four">82</td>
+                        </tr>
+                        <tr>
+                            <td class="box-one">2</td>
+                            <td class="box-two">System modeling</td>
+                            <td class="box-three">1</td>
+                            <td class="box-four">85</td>
+                        </tr>
+                        <tr>
+                            <td class="box-one">3</td>
+                            <td class="box-two">Object-oriented programming</td>
+                            <td class="box-three">2</td>
+                            <td class="box-four">99</td>
+                        </tr>
+                        <tr>
+                            <td class="box-one">4</td>
+                            <td class="box-two">Estonian language Level A2</td>
+                            <td class="box-three">2</td>
+                            <td class="box-four">65</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </section>
+        </div> 
+        
+        <footer>
+            <ul>
+                <li>
+                    <a href="https://ois2.ut.ee/">OIS</a>
+                </li>
+                <li>
+                    <a href="https://courses.cs.ut.ee/">Courses</a>
+                </li>
+            </ul>
+        </footer>
+        
+        
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+        </body>
+        </html>
+        
