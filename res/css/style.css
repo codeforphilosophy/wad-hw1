@@ -12,105 +12,67 @@ Submit your Name, student ID, and repository link to homework submission page. *
 }
 .profile_info{
     display: flex;
-    width: 600px;
+    width: 1200px;
     height: 600px;
     border: 2px solid black;
+    margin: 10px auto;
+    flex-wrap: wrap;
 }
 
 .profile_info section:nth-of-type(1){
     border: 2px solid blue;
     display: flex;
     flex-direction: column;
+    width: 300px;
 }
 
 .profile_info section:nth-of-type(2){
     border: 2px solid pink;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* section:nth-of-type(1){
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-}
-
-section:nth-of-type(2) {
-    display: flex;
-    flex-direction: column;
     flex-grow: 1;
-    justify-content: start;
-} */
+}
+
+.image {
+    margin: 10px auto;
+}
 
 
-
-/* table {
+.table-main {
     border-collapse: collapse;
+    width: 80%;
+    margin: 10px auto;
 }
 
-table, thead, tbody  {
-    border: 2px solid black;
+.table-main .table_head, .table-main .table_body {
+    border: 1px solid black;
+    padding: 8px;
 }
 
-thead {
+
+.table-main tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.table-main tr:hover {
+    background-color: #ddd;
+}
+
+.table-main th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+  }
+
+
+/* thead {
     display: flex;
 }
 
 tbody {
     display: flex;
     flex-direction: column;
-} */
+} */ */
 
 
 /* .box-one {
@@ -129,4 +91,4 @@ tbody {
 
 .box-four {
     order: 4;
-} */
+}
