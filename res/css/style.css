@@ -10,7 +10,7 @@ Submit your Name, student ID, and repository link to homework submission page. *
 *{
     font-family: 'Merriweather', serif;
 }
-.profile_info{
+/* .profile_info{
     display: flex;
     width: 1200px;
     height: 600px;
@@ -62,33 +62,32 @@ Submit your Name, student ID, and repository link to homework submission page. *
     text-align: left;
     background-color: #4CAF50;
     color: white;
+} */
+body {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 10vw 30vw 10vw;
+    grid-gap: 1em;
   }
-
-
-/* thead {
+  
+  header,
+  footer {
+    grid-column: 1 / span 2;
+  }
+  
+  /* Demo Specific Styles */
+  body {
+    margin: 0 auto;
+    /* max-width: 56em; */
+    padding: 1em 0;
+  }
+  
+  header,
+  main,
+  aside,
+  footer {
+    background: #eaeaea;
     display: flex;
-}
-
-tbody {
-    display: flex;
-    flex-direction: column;
-} */ */
-
-
-/* .box-one {
-    di
-    order: 1;
-    flex-grow: 6;
-}
-
-.box-two {
-    order: 2;
-}
-
-.box-three {
-    order: 3;
-}
-
-.box-four {
-    order: 4;
-}
+    align-items: center;
+    justify-content: center;
+  }
