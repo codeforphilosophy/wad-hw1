@@ -14,7 +14,7 @@ body {
 
 .content {
     grid-area: content;
-    background: url(/Users/SA/Desktop/Homework_1/wad-hw1/res/images/memphis-mini/memphis-mini.png)
+    background: url(../images/memphis-mini/memphis-mini.png)
 }
 .sidebar {
     grid-area: sidebar;
