@@ -59,6 +59,12 @@ nav ul {
     padding-top: 20px;
     text-align: center;
 }
+
+#user_img {
+    object-fit:cover;
+    border-radius:50%;
+}
+
 nav li {
     list-style: none;
     padding: 1em 0;
@@ -76,23 +82,23 @@ nav li a:hover {
     opacity: 1;
 }
 
-.hero {
+.user {
     max-width: 960px;
     margin: 0 auto;
     text-align: center;
 }
 
-.hero img {
+.user img {
     width: 200px;
 }
 
-.hero h1 {
+.user h1 {
     font-size: 2em;
     font-weight: 300;
     color: #373d46;
 }
 
-.hero p {
+.user p {
     font-weight: 300;
     line-height: 1.8em;
     color: #98a0ad;
@@ -123,7 +129,7 @@ footer ul li a {
     color: #c1c6ce;
 }
 
-#hero_courses {
+#_courses {
     width: 100%;
     padding: 10px;
     margin: 10px auto;
@@ -211,18 +217,18 @@ table.course_table tr.even {
         margin-bottom: 70px; 
     }
 
-    .hero {
+    .user {
         text-align: left;
         margin: 2em auto;
     }
-    .hero img {
+    .user img {
         width: 250px;
         float: right;
     }
-    .hero h1 { 
+    .user h1 { 
         font-size: 3em;
     }
-    .hero p {
+    .user p {
         width: 60%;
     }
     footer ul {
