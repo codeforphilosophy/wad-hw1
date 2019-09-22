@@ -9,12 +9,16 @@ Submit your Name, student ID, and repository link to homework submission page. *
 
 *{
     font-family: 'Merriweather', serif;
+    background-image: url(/Users/SA/Desktop/Homework_1/wad-hw1/res/images/memphis-mini/memphis-mini.png)
 }
+
+
 .profile_info{
     display: flex;
-    width: 600px;
+    width: fit-content;
     height: 600px;
     border: 2px solid black;
+    margin: 10px auto;
 }
 
 .profile_info section:nth-of-type(1){
@@ -27,106 +31,3 @@ Submit your Name, student ID, and repository link to homework submission page. *
     border: 2px solid pink;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* section:nth-of-type(1){
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-}
-
-section:nth-of-type(2) {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    justify-content: start;
-} */
-
-
-
-/* table {
-    border-collapse: collapse;
-}
-
-table, thead, tbody  {
-    border: 2px solid black;
-}
-
-thead {
-    display: flex;
-}
-
-tbody {
-    display: flex;
-    flex-direction: column;
-} */
-
-
-/* .box-one {
-    di
-    order: 1;
-    flex-grow: 6;
-}
-
-.box-two {
-    order: 2;
-}
-
-.box-three {
-    order: 3;
-}
-
-.box-four {
-    order: 4;
-} */
