@@ -18,9 +18,9 @@ body {
 .sidebar {
     grid-area: sidebar;
     background: linear-gradient(to right,
-    rgba(249,107,142,1),
-    rgba(218,103,230,1),
-    rgba(130,125,253,1));
+    rgb(200, 64, 98),
+    rgb(230, 107, 103),
+    rgb(240, 201, 29, 0.9));
     justify-content: center;   
 }
 
@@ -128,9 +128,9 @@ footer ul li a {
     }
     .sidebar {
         background: linear-gradient(
-        rgba(249,107,142,1),
-        rgba(218,103,230,1),
-        rgba(130,125,254,1));
+            rgb(255, 116, 0),
+            rgb(209, 159, 21),
+            rgb(251,251,230));
         padding-top: 3em; 
     }
 
