@@ -6,28 +6,228 @@ Use at least 3 different combinators
 Push all your changes to your repository
 At least one commit from every team member
 Submit your Name, student ID, and repository link to homework submission page. */
-
-*{
-    font-family: 'Merriweather', serif;
-    background-image: url(/Users/SA/Desktop/Homework_1/wad-hw1/res/images/memphis-mini/memphis-mini.png)
+@import url('https://fonts.googleapis.com/css?family=Chilanka|Hepta+Slab:300,500,700&display=swap');
+body {
+    font-family: 'Hepta Slab', serif;
+    background: #e5e5e5;
+}
+.content {
+    grid-area: content;
+    background: url(/Users/SA/Desktop/Homework_1/wad-hw1/res/images/memphis-mini/memphis-mini.png)
+}
+.sidebar {
+    grid-area: sidebar;
+    background: linear-gradient(to right,
+    rgba(249,107,142,1),
+    rgba(218,103,230,1),
+    rgba(130,125,253,1));
+    justify-content: center;   
 }
 
+.footer {
+    grid-area: footer;
+    background: white;
+}
 
-.profile_info{
+.container {
+    font-size: 1.5em;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "sidebar" "content" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 130px 1100px 10%;
+}
+.content,
+.sidebar,
+.footer {
+    padding: auto 1em;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
     display: flex;
-    width: fit-content;
-    height: 600px;
-    border: 2px solid black;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#welcome_msg header{
+    text-align: center;
+}
+nav li {
+    list-style: none;
+    padding: 1em 0;
+}
+nav li a {
+    color:white;
+    font-weight: 700;
+    opacity: 0.6;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav li a:hover {
+    opacity: 1;
+}
+
+.hero {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero img {
+    width: 200px;
+}
+
+.hero h1 {
+    font-size: 2em;
+    font-weight: 300;
+    color: #373d46;
+}
+
+.hero p {
+    font-weight: 300;
+    line-height: 1.8em;
+    color: #98a0ad;
+}
+
+footer ul {
+    max-width: 640px;
+    margin:0 auto;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer ul li {
+    list-style: none;
+    align-self: flex-end;
+}
+footer ul li p{
+    font-size: x-small;
+}
+footer ul li a {
+    text-decoration: none;
+    color: #c1c6ce;
+}
+
+@media (min-width: 1040px) {
+    .container { 
+        grid-template-areas: "sidebar content" "sidebar footer";
+        grid-template-columns: 300px 1fr;
+        grid-template-rows: 1fr 5%;
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .sidebar {
+        background: linear-gradient(
+        rgba(249,107,142,1),
+        rgba(218,103,230,1),
+        rgba(130,125,254,1));
+        padding-top: 3em; 
+    }
+
+    #welcome_msg {
+        margin-bottom: 70px; 
+        }
+
+    .hero {
+        text-align: left;
+        margin: 2em auto;
+    }
+    .hero img {
+        width: 250px;
+        float: right;
+    }
+    .hero h1 { 
+        font-size: 3em;
+    }
+    .hero p {
+        width: 60%;
+    }
+    footer ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        max-width: 960px;
+        margin: auto;
+        padding: auto;   
+    }
+    footer ul li p {
+        font-size: 10px;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+#hero_courses {
+    width: 100%;
+    padding: 10px;
     margin: 10px auto;
+    font-family: 'Hepta Slab', serif;
+    font-size: 0.9em;
+    font-weight: 300;
 }
 
-.profile_info section:nth-of-type(1){
-    border: 2px solid blue;
-    display: flex;
-    flex-direction: column;
+table.course_table {
+  border-collapse: collapse;
+  border: 1px solid black;
+  table-layout: auto;
+  width: 100%;
+}
+table.course_table caption{
+    background-color: #f79646;
+	color: #fff;
+	font-size: x-large;
+	font-weight: bold;
+    letter-spacing: .3em;
 }
 
-.profile_info section:nth-of-type(2){
-    border: 2px solid pink;
+table.course_table thead th {
+	padding: 8px;
+	background-color: #fde9d9;
+	font-size: large;
 }
 
+table.course_table thead th#the_emp {
+	width: 10%;	
+}
+
+table.course_table thead th#course_title, table.course_table thead th#semester, table.course_table thead th#grade {
+    width: 90%;
+}
+
+table.course_table th, table.course_table td {
+	padding: 3px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #f79646 #ccc;
+}
+
+table.course_table td {
+	text-align: left;
+}
+
+table.course_table tbody th {
+	text-align: left;
+	font-weight: normal;
+}
+
+table.course_table tfoot tr {
+    border: 1px solid #f79646; 
+	font-weight: bold;
+	font-size: small;
+    color: black;
+    
+}
+
+table.course_table tr.even {
+	background-color: #fde9d9;
+}
