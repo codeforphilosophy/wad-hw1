@@ -14,7 +14,9 @@ body {
 
 .content {
     grid-area: content;
-    background: url(../images/memphis-mini/memphis-mini.png)
+    background: url(../images/memphis-mini/memphis-mini.png);
+    padding: 1em 40px;
+    
 }
 .sidebar {
     grid-area: sidebar;
@@ -185,7 +187,7 @@ table.course_table tr.even {
     .container { 
         grid-template-areas: "sidebar content" "sidebar footer";
         grid-template-columns: 300px 1fr;
-        grid-template-rows: 1fr 40px;
+        grid-template-rows: 1fr 70px;
     }
     nav ul {
         display: flex;
@@ -221,14 +223,22 @@ table.course_table tr.even {
     footer ul {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: left;
         max-width: 960px;
         margin: auto;
         padding: auto;   
     }
+
+    footer ul li{
+        margin: 0 40px;
+        
+    }
+
     footer ul li p {
-        font-size: 10px;
-        text-align: center;
-        justify-content: center;
+        font-size: 1em;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.5);
+        text-align: left;
+        justify-content: right;
     }
 }
