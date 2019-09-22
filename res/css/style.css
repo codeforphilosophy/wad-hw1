@@ -39,7 +39,7 @@ body {
     display: grid;
     grid-template-areas: "sidebar" "content" "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: 130px 1fr 40px;
+    grid-template-rows: 130px 1fr 60px;
 }
 .content,
 .sidebar,
@@ -56,6 +56,7 @@ nav ul {
 }
 
 #welcome_msg header{
+    padding-top: 20px;
     text-align: center;
 }
 nav li {
@@ -63,6 +64,7 @@ nav li {
     padding: 1em 0;
 }
 nav li a {
+    padding: 0 20px;
     color:white;
     font-weight: 700;
     opacity: 0.6;
@@ -103,15 +105,18 @@ footer ul {
     text-align: center;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: left;
 }
 
 footer ul li {
     list-style: none;
     align-self: flex-end;
+    margin: 0 40px;
 }
 footer ul li p{
-    font-size: x-small;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5);
 }
 footer ul li a {
     text-decoration: none;
@@ -231,7 +236,6 @@ table.course_table tr.even {
 
     footer ul li{
         margin: 0 40px;
-        
     }
 
     footer ul li p {
